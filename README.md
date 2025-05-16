@@ -77,7 +77,7 @@ Log into Client-1 as `mydomain.com\jane_admin`, you open the System Properties a
 
 ### 6. Create 10,000 Users via PowerShell
 
-Log into DC-1 as `jane_admin` and open PowerShell ISE with administrative privileges. Paste a PowerShell script and run to automate the generation of multiple user accounts, all placed within the `_EMPLOYEES` OU. 
+Log into DC-1 as `jane_admin` and open PowerShell ISE with administrative privileges. Paste a PowerShell script (Generates 10,000 users) and run to automate the generation of multiple user accounts, all placed within the `_EMPLOYEES` OU. 
 
 ![mstsc_Vn7FPeoS3T](https://github.com/user-attachments/assets/8235a92b-876c-4dbe-a4c3-f9c8c559c1f2)
 
@@ -91,4 +91,5 @@ To confirm proper setup, attempt to log into Client-1 using one of the newly cre
 
 ![mstsc_F3ivQiqIub](https://github.com/user-attachments/assets/e328ae6a-ecaa-4246-a761-9048b82a6aa3)
 
+![mstsc_Pcd1XKQsvS](https://github.com/user-attachments/assets/f5101a59-5a5e-4783-bf68-80bad332b4cd)
 
