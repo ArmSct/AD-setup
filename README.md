@@ -69,17 +69,26 @@ Goto the Azure portal and navigate the client VM and for the DNS server add the 
 ---
 
 ### 5. Enable Remote Desktop for Domain Users
+Log into Client-1 as `mydomain.com\jane_admin`, you open the System Properties and navigate to the Remote Desktop settings. Here, you allow members of the "Domain Users" group to access the machine via Remote Desktop. This setup allows any domain user to log into Client-1 remotely.
+![mstsc_LzfSyaF4UH](https://github.com/user-attachments/assets/3a0e1303-e8c5-46eb-bdab-bb5c1e69d576)
 
-You begin the second part of the lab by ensuring both DC-1 and Client-1 are running in the Azure Portal. After logging into Client-1 as `mydomain.com\jane_admin`, you open the System Properties and navigate to the Remote Desktop settings. Here, you allow members of the "Domain Users" group to access the machine via Remote Desktop. This setup allows any domain user to log into Client-1 remotely, though in a production environment this would typically be done through Group Policy.
-
----
-
-### Create Multiple Users via PowerShell
-
-Next, you log back into DC-1 as `jane_admin` and open PowerShell ISE with administrative privileges. A PowerShell script is created and run to automate the generation of multiple user accounts, all placed within the `_EMPLOYEES` OU. Once the script completes, you verify that the accounts appear in Active Directory Users and Computers.
 
 ---
 
-### Test Logins with New Users
+### 6. Create 10,000 Users via PowerShell
 
-To confirm proper setup, you attempt to log into Client-1 using one of the newly created user accounts. As long as Remote Desktop access has been properly granted, the login should succeed. Be sure to use the password defined in the PowerShell script when signing in.
+Log into DC-1 as `jane_admin` and open PowerShell ISE with administrative privileges. Paste a PowerShell script and run to automate the generation of multiple user accounts, all placed within the `_EMPLOYEES` OU. 
+
+![mstsc_Vn7FPeoS3T](https://github.com/user-attachments/assets/8235a92b-876c-4dbe-a4c3-f9c8c559c1f2)
+
+![mstsc_JwaBnpHcd3](https://github.com/user-attachments/assets/dac1a9c5-ded9-40f8-97fc-b5171e2dffa4)
+
+---
+
+### 7. Test Logins with a New User
+
+To confirm proper setup, attempt to log into Client-1 using one of the newly created user accounts. 
+
+![mstsc_F3ivQiqIub](https://github.com/user-attachments/assets/e328ae6a-ecaa-4246-a761-9048b82a6aa3)
+
+
