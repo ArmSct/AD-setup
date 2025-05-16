@@ -20,9 +20,11 @@ This project demonstrates how to deploy and configure a basic Active Directory e
 
 ### 1. Deploy Virtual Machines in Azure
 Create a new resource group in the Azure Portal to host network-related resources. Within this group, create two virtual machines, a Windows server and a client. Both of these VMs will use the same resource group and Vnet.
+
 ![firefox_0kUyhqb1OF](https://github.com/user-attachments/assets/87abb90d-eb88-46b1-98a4-b59257c64bf4)
 
 Once the VMs are made check for a connection between the domain controller and the client. The firewall settings must be configured on the domain controller so the ping request from the cleint won't time out.
+
 ![mstsc_BdutgAP0IC](https://github.com/user-attachments/assets/372c5a79-f2b6-4aab-b7e4-615f2ace7583)
 
 Log into the client with RDP. Open the Command Prompt and ping the domain controller's IP address.
@@ -32,10 +34,12 @@ Log into the client with RDP. Open the Command Prompt and ping the domain contro
 
 ### 2. Install and Configure Active Directory
 Login to the domain controller and install the Active Directory Domain Services role. 
+
 ![mstsc_TdV3xpx1YJ](https://github.com/user-attachments/assets/2fcf7bd8-c5f0-48f9-a5f1-70ea446af3e8)
 
 
 Once installed, the server is promoted to a Domain Controller by setting up a new domain name. After the server restarts, you log back in using the domain credentials (`mydomain.com\labuser`).
+
 ![mstsc_vcZk0YOgX0](https://github.com/user-attachments/assets/400be63c-1488-44c6-9276-0569e60c639c)
 
 ---
@@ -43,6 +47,7 @@ Once installed, the server is promoted to a Domain Controller by setting up a ne
 ### 3. Create a Domain Admin User and a Normal User Account
 
 Inside the Active Directory Users and Computers (ADUC) console, create two Organizational Units (OUs) named `_EMPLOYEES` and `_ADMINS`. A new user named Jane Doe is then created with the username `jane_admin` and a secure password. This user is added to the "Domain Admins" security group. You log out and then log back in as `mydomain.com\jane_admin`.
+
 ![mstsc_fyEm01VpjN](https://github.com/user-attachments/assets/8d256c7b-ebdf-41f4-962f-db1e70dd1d17)
 
 ![mstsc_KNDDPWf8z2](https://github.com/user-attachments/assets/b031ffbd-fb7f-4673-a6ad-1d1d1e3caf21)
@@ -55,6 +60,7 @@ Inside the Active Directory Users and Computers (ADUC) console, create two Organ
 ### Join Client-1 to the Domain
 
 Login into Client-1 as the original local admin (not jane_admin) and join it to the domain. The Create an OU named “_CLIENTS” and add Client-1 to the OU.
+
 ![mstsc_puvzNEyrtk](https://github.com/user-attachments/assets/531cc45a-28ef-4ad8-bb70-d1ddf901d747)
 
 ![mstsc_lUojA7QSN1](https://github.com/user-attachments/assets/76b68510-9758-46a1-8fe9-2accdf781ef9)
