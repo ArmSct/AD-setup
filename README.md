@@ -57,9 +57,9 @@ Inside the Active Directory Users and Computers (ADUC) console, create two Organ
 
 ---
 
-### Join Client-1 to the Domain
+### 4. Join Client-1 to the domain (mydomain.com)
 
-Login into Client-1 as the original local admin (not jane_admin) and join it to the domain. The Create an OU named “_CLIENTS” and add Client-1 to the OU.
+Goto the Azure portal and navigate the client VM and for the DNS server add the domain contrllers private IP address. Login into Client-1 as the original local admin (not jane_admin) and join it to the domain. The Create an OU named “_CLIENTS” and add Client-1 to the OU.
 
 ![mstsc_puvzNEyrtk](https://github.com/user-attachments/assets/531cc45a-28ef-4ad8-bb70-d1ddf901d747)
 
@@ -68,9 +68,7 @@ Login into Client-1 as the original local admin (not jane_admin) and join it to 
 
 ---
 
-## 🧪 Part 2 - Managing Domain Users and Remote Access
-
-### Enable Remote Desktop for Domain Users
+### 5. Enable Remote Desktop for Domain Users
 
 You begin the second part of the lab by ensuring both DC-1 and Client-1 are running in the Azure Portal. After logging into Client-1 as `mydomain.com\jane_admin`, you open the System Properties and navigate to the Remote Desktop settings. Here, you allow members of the "Domain Users" group to access the machine via Remote Desktop. This setup allows any domain user to log into Client-1 remotely, though in a production environment this would typically be done through Group Policy.
 
