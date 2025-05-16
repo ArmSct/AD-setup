@@ -59,7 +59,7 @@ Inside the Active Directory Users and Computers (ADUC) console, create two Organ
 
 ### 4. Join Client-1 to the domain (mydomain.com)
 
-Goto the Azure portal and navigate the client VM and for the DNS server add the domain contrllers private IP address. Login into Client-1 as the original local admin (not jane_admin) and join it to the domain. The Create an OU named “_CLIENTS” and add Client-1 to the OU.
+Goto the Azure portal and navigate the client VM and for the DNS server add the domain controller's private IP address. Login into Client-1 as the original local admin (not jane_admin) and join it to the domain. The Create an OU named “_CLIENTS” and add Client-1 to the OU.
 
 ![mstsc_puvzNEyrtk](https://github.com/user-attachments/assets/531cc45a-28ef-4ad8-bb70-d1ddf901d747)
 
