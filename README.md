@@ -5,7 +5,7 @@
 This project demonstrates how to deploy and configure a basic Active Directory environment in Microsoft Azure, while capturing and analyzing network traffic using Wireshark. The lab includes setting up domain services, creating organizational units and users, joining client machines to the domain, and configuring Remote Desktop access for non-administrative users.
   
 ---
-
+ 
 ## Technology Utilized
 - Microsoft Azure (VM deployment & networking)
 - Windows Server & Windows 10 
