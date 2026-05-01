@@ -10,7 +10,7 @@ This project demonstrates how to deploy and configure a basic Active Directory e
 - Microsoft Azure (VM deployment & networking)
 - Windows Server & Windows 10 
 - Ubuntu Server 
-- Active Directory Domain Services (AD DS)
+- Active Directory Domain Services (AD DS) 
 - RDP (Remote Desktop Protocol) 
 - PowerShell
 
