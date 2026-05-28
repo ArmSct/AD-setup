@@ -6,7 +6,7 @@ This project demonstrates how to deploy and configure a basic Active Directory e
   
 ---
  
-## Technology Utilized
+## Technology Utilized 
 - Microsoft Azure (VM deployment & networking)
 - Windows Server & Windows 10 
 - Ubuntu Server  
